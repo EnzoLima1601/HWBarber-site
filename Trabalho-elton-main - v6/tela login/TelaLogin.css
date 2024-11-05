@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+  width: 50%;
+  height: 720px;
+  background-color: rgba(227, 182, 59, 0.842); /*deixei transparente*/
+  border-radius: 15px; /*modifiquei para 15 antes tava 10 */
+  margin-left: 25%;
+  margin-top: 2%;
+  border: 2px solid rgb(83, 66, 18); /*acrescentei essa borada*/
+}
+
+.plano-fundo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  z-index: 0;
+}
+.tela-de-login {
+  position: relative;
+  z-index: 1;
+}
+
+.textos {
+  align-items: center;
+  /* width: 300px;
+  height: 400px; */
+  padding: 5%;
+}
+
+.textos .IconTroca {
+  position: relative;
+  text-align: right;
+  /* margin: 10px; */
+}
+
+.textos h2 {
+  position: relative;
+  text-align: center;
+}
+
+/* Icon usuario */
+.textos .usuario-login-icon {
+  /* text-align: center; */
+  background-color: #ffffff;
+  width: 23%;
+  height: 23%;
+  padding: 9px;
+  border-radius: 20px;
+  margin: auto;
+}
+.textos .iconPerfil {
+  text-align: center;
+}
+/* Icon usuario */
+
+/* Textos */
+.campo {
+  position: relative;
+  text-align: center;
+  margin-top: 10%;
+}
+.campo .digite-seus-dados {
+  width: 65%;
+  color: rgba(0, 0, 0, 0.562);
+  font-weight: bold;
+  font-size: 22px;
+}
+.campo input {
+  width: 60%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border-color: white;
+}
+.digite-seus-dados {
+  margin-left: 17%;
+}
+.semConta {
+  margin-left: 20%;
+  width: 80%;
+  height: 30px;
+}
+.textos h6 {
+  position: relative;
+  width: 55%;
+  margin-top: 5px;
+  /* margin: ; */
+  /* background-color: black; */
+  /* text-align: center; */
+}
+/* Textos */
+
+/* Botão proximo */
+.confirmar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.boto-finalizar {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #3abd0b;
+  color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+  border: 2px solid;
+  border-color: #3abd0b;
+  left: -18%;
+}
+.boto-finalizar:hover {
+  background-color: #1d5f06;
+  border-color: #3abd0b;
+  transition: background-color 0.3s, color 0.3s;
+}
+.no-tem-uma {
+  color: #175568;
+}
+.no-tem-uma a {
+  color: #175568;
+}
+.esqueceu-sua-senha a {
+  color: #175568;
+}

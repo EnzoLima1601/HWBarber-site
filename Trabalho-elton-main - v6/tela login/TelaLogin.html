@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="TelaLogin.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic:wght@400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap">
+
+  <title>Tela de Login</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="../imagens/hwbarber.png" alt="HW Barber">
+    </div>
+    <ul class="navHeader">
+      <li id="botaoInicio" onclick="header()">Início</li>
+      <li id="botaoCortes" onclick="header()">Cortes</li>
+      <li id="botaoHorarios" onclick="header()">Horários</li>
+      <li id="botaoLocalizacao" onclick="scrollToSection()">Localização</li>
+      <li id="cutpoints" class="cutpoint">Cutpoints: <span id="cutpointsValor" hidden>${numero}</span></li>
+      <div class="user-actions">
+        <img class="carrinho" src="../imagens/carrinho.svg" alt="Carrinho" id="Carrinho" onclick="header()">
+        <img class=" perfil" src="../imagens/perfil.svg" alt="Pefil" id="botaoPerfil" id="Login" onclick="header()">
+      </div>
+    </ul>
+
+  </header>
+
+
+  <div class="tela-de-login">
+    <img class="plano-fundo-icon" alt="Fundo da Tela de Login" src="../imagens/FundoLogin.png">
+
+
+    <div class="container">
+
+      <div class="textos">
+        <div class="IconTroca">
+          <img class="trocarprabarbeiro-icon" alt="Trocar para barbeiro" src="../imagens/trocarprabarbeiro.png" id="trocarTelaLoginBarbeiro" onclick="trocaTela1()">
+        </div>
+
+        <!-- depois fazer essa parte de deixar um no lado do outro -->
+        <div class="deixarNoLado">
+          <h2>Cliente</h2>
+          <div class="iconPerfil">
+            <img class="usuario-login-icon" alt="Ícone de Usuário" src="../imagens/perfil.svg">
+          </div>
+        </div>
+
+
+        <div class="campo">
+          <div class="digite-seus-dados">Digite seus dados no campo abaixo.</div>
+          <!-- <label for="email" class="emailusurio">Email/Usuário</label> -->
+          <input type="text" id="email" name="email" required aria-label="Email ou Usuário" placeholder=" Email/Usuário" class="input-centro">
+          <!-- <label for="senha" class="senha">Senha</label> -->
+          <input type="password" id="senha" name="senha" required aria-label="Senha" placeholder=" Senha" class="input-centro">
+        </div>
+
+        <div class="semConta">
+          <h6 class="no-tem-uma" id="noTemUma">Não tem uma conta? <a href="/Tela Cadastro/TelaCadastro.html">Cadastre-se!</a></h6>
+          <h6 class="esqueceu-sua-senha" id="esqueceuSuaSenha"><a href="/Redefinirsenha/CodigoVerifica.html">Esqueceu sua senha?</a></h6>
+        </div>
+
+
+
+        <div class="confirmar" id="confirmarContainer">
+          <button id="Botaofinalizar" class="boto-finalizar" aria-label="Próximo" onclick="funcaologar()">
+            Próximo
+          </button>
+        </div>
+
+      </div>
+
+    </div><!-- .container -->
+
+  </div>
+
+
+
+</body>
+<script src="/script.js"></script>
+
+</html>

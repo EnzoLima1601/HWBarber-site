@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.validacao-de-codigo {
+  width: 100%;
+  position: relative;
+  background-color: #292929;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  color: #000;
+}
+
+.icone-ferramentas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajuste para cobrir toda a largura */
+  height: auto; /* Ajuste a altura automaticamente */
+  object-fit: cover;
+  z-index: 0;
+}
+
+.container-grupo {
+  position: relative;
+  padding: 20px; /* Adicione um pouco de espaço interno */
+  z-index: 1; /* Para garantir que fique acima do fundo */
+  background-color: rgba(227, 182, 58, 1);
+  text-align: center;
+  margin-top: 100px;
+  width: auto;
+  margin-left: 27%;
+  margin-right: 27%;
+  border-radius: 10px;
+  height: auto;
+  /* margin-bottom: 30%; */
+}
+.campos-codigo {
+  /* display: flex; */
+  position: relative;
+  justify-content: space-between;
+  margin: 20px 0; /* Espaço acima e abaixo dos campos */
+  width: 250px;
+  margin-left: 7%;
+  margin-right: 7%;
+  left: 10%;
+}
+.campos-codigo p {
+  position: relative;
+  right: 30%;
+  font-weight: bold;
+}
+.repita {
+  position: relative;
+  left: -8%;
+}
+input {
+  border: none;
+  width: 10px;
+}
+.mensagem-codigo {
+  font-size: 20px;
+  color: #ffffff; /* Cor do texto */
+  margin: 10px 100px;
+}
+
+.campo-1,
+.campo-2 {
+  width: 140%;
+  height: 40px;
+  background-color: #c9c9c9; /* Cor de fundo para os campos */
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px; /* Centraliza verticalmente o texto */
+  font-size: 18px;
+}
+.Seguranca {
+  position: relative;
+  text-align: left;
+  padding: 0;
+  /* margin-left: 20%; */
+  margin: 0;
+  left: 20%;
+}
+.Seguranca ul, p{
+  font-weight: bold;
+}
+.imagem-grupo {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem no container */
+}
+
+.confirmar {
+  margin-top: 20px; /* Espaço acima do botão */
+}
+
+.botao-enviar {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #3abd0b;
+  /* border: none; */
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  border-color: #3abd0b;
+  right: 0%;
+}
+
+.botao-enviar:hover {
+  background-color: #1d5f06;
+  border-color: #3abd0b;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.titulo-redefinicao {
+  font-size: 48px;
+  color: #ffffff; /* Cor do texto */
+  margin: 20px 0;
+}
+
+.label-codigo {
+  display: block;
+  font-size: 25px;
+  color: #ffffff; /* Cor do texto */
+  margin: 10px 0; /* Espaço acima e abaixo da label */
+}

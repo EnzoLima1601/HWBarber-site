@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+
+  <link rel="stylesheet" href="TelaPix.css" />
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lekton:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" />
+
+  <title>Pagamento pix</title>
+</head>
+
+<body onload="redirecionarParaProximaPagina()">
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="logo">
+      <img src="/imagens/hwbarber.png" alt="HW Barber">
+    </div>
+    <ul class="navHeader">
+      <li id="botaoInicio" onclick="header()">Início</li>
+      <li id="botaoCortes" onclick="header()">Cortes</li>
+      <li id="botaoHorarios" onclick="header()">Horários</li>
+      <li id="botaoLocalizacao" onclick="scrollToSection()">Localização</li>
+      <li id="cutpoints" class="cutpoint">Cutpoints: <span id="cutpointsValor" hidden>${numero}</span></li>
+      <div class="user-actions">
+        <img class="carrinho" src="/imagens/carrinho.svg" alt="Carrinho" id="Carrinho" onclick="header()">
+        <img class=" perfil" src="../imagens/perfil.svg" alt="Pefil" id="botaoPerfil" id="Login" onclick="header()">
+      </div>
+    </ul>
+
+  </header>
+
+
+  <div class="TelaToda">
+    <img class="imgfundo" alt="" src="/imagens/ImgFundoCarrinho.png">
+
+    <div class="tudo">
+
+      <div class="container">
+
+        <div class="retangulo1">
+          <div class="Pix-pagamento">
+            <img class="PixImg" alt="Imagem de Pix" src="/imagens/IMAGEM_PIX.png">
+          </div>
+          <div class="bySide">
+            <h3 class="Texto1">Pague com o QR CODE</h3>
+          </div>
+
+          <img class="ImgQR" src="/imagens/QR_code.png" alt="QRCode">
+          <p class="Texto2">Um novo codigo sera gerado em:
+            <br><span id="SegundoQR" hidden>${segundos}</span>
+          </p>
+
+          <input type="text" name="" id="CodigoPix">
+          <h3 class="total">Valor total: R$ 30,00</h3>
+
+
+          <h4>seu Pix está sendo analisado...</h4>
+
+        </div> <!--Retangular1-->
+
+
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/script.js"></script>
+
+</html>
