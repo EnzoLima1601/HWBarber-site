@@ -1,0 +1,149 @@
+header {
+  z-index: 1;
+}
+
+.pagina {
+  position: relative;
+  display: flex;
+  height: 150%;
+  width: 100%;
+}
+
+/* Retangulo Esquerdo */
+
+.retanguloLeft {
+  height: 100%;
+  width: 23%;
+  background-color: hsla(44, 75%, 56%, 1);
+  float: left;
+  /* border-top-left-radius: 20px; */
+  text-align: center;
+}
+
+.usuarioImg img {
+  width: 50%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 30%;
+}
+.objeto {
+  margin-top: 100px;
+}
+.objeto .nome {
+  padding-left: 31%;
+  border-color: white;
+  border-radius: 10px;
+  width: 85%;
+  height: 38px;
+}
+.objeto .info {
+  list-style-type: none;
+  background-color: white;
+  margin-left: 8%;
+  margin-top: 25px;
+  width: 85%;
+  height: 150px;
+  border-radius: 5px;
+  padding-left: 3%;
+}
+.objeto ul {
+  padding-left: 0px;
+  width: 10%;
+  margin-top: 8%;
+  float: left;
+}
+.objeto button {
+  margin-top: 15%;
+  padding: 10px;
+  width: 50%;
+  height: 45px;
+  border-radius: 5px;
+  border-color: white;
+  color: #a38e56;
+  font-weight: bold;
+}
+
+.objeto button:hover {
+  background-color: #322200;
+  border-color: #f3bc3a;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Retangulo Esquerdo */
+
+.info {
+  list-style-type: none;
+  padding: 8%;
+  margin: 0;
+  text-align: left;
+}
+.info li {
+  margin-top: 3%;
+  display: block;
+  margin-left: 8%;
+  font-weight: bold;
+}
+.btn {
+  position: relative;
+  margin-top: -16px;
+}
+/* Retangulo Dieito (vulgo: imagem) */
+
+.retanguloRight {
+  flex: 1;
+}
+.retanguloRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.campoEscrever {
+  font-size: 35px;
+  color: white;
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 34%;
+  z-index: 1;
+}
+.campoContainer {
+  position: absolute;
+  width: 90%;
+  z-index: 2;
+  margin-top: -42%;
+  margin-left: 8%;
+}
+.campoContainer input {
+  width: 70%;
+  height: 45px;
+  margin-top: 2%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: white;
+}
+.botao {
+  position: relative;
+  margin-top: -13%;
+  left: 55%;
+  /* padding: 10px;
+  width: 20%;
+  height: 45px; */
+}
+.botao button {
+  margin-top: 15%;
+  padding: 10px;
+  width: 15%;
+  height: 45px;
+  border-radius: 5px;
+  border-color: white;
+  color: #a38e56;
+  font-weight: bold;
+}
+.botao button:hover {
+  background-color: #322200;
+  border-color: #f3bc3a;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Retangulo Dieito (vulgo: imagem) */

@@ -1,0 +1,94 @@
+.TelaToda {
+  position: relative;
+}
+
+.imgfundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.tudo {
+  position: relative;
+  z-index: 1;
+}
+
+.selecione-o-dia {
+  background-color: #d9d9d9;
+  padding: 20px;
+  margin: auto;
+  display: inline-block;
+  border-radius: 15px;
+  margin-left: 36.6%;
+  margin-top: 12%;
+  color: #8e5b28;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 5%;
+}
+
+.grupo-dias {
+  display: flex 2 2 200px; /* Ativando Flexbox */
+}
+
+.rectangle-parent,
+.rectangle-parent1,
+.rectangle-parent2,
+.rectangle-parent3,
+.rectangle-parent4,
+.rectangle-parent5,
+.rectangle-parent6 {
+  cursor: pointer;
+  font-size: 28px;
+  background-color: white;
+  width: 17%;
+  border-radius: 4px;
+  padding: auto; /*10px antes*/
+  text-align: center;
+}
+#clickHora:hover {
+  background-color: #7c7c7c;
+  cursor: pointer;
+}
+
+.rectangle-parent,
+.rectangle-parent2,
+.rectangle-parent4 {
+  float: right;
+  margin-right: 33%;
+}
+
+.rectangle-parent1,
+.rectangle-parent3,
+.rectangle-parent5 {
+  margin-left: 32%;
+  margin-bottom: 3%;
+}
+
+.rectangle-parent6 {
+  float: right;
+  margin-right: 42.5%;
+  margin-bottom: 100px;
+}
+
+.icon {
+  /* coloquei isso */
+  width: 18%;
+  height: 100%;
+  float: left;
+  border-radius: 4px;
+}
+
+.juntotudo {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.horas {
+  margin-left: 5%;
+}

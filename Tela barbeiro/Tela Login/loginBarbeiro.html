@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+
+  <link rel="stylesheet" href="/Tela barbeiro/globalBarbeiro.css">
+  <link rel="stylesheet" href="loginBarbeiro.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic:wght@400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap">
+
+  <title>Login Barbeiro</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="/imagens/hwbarber.png" alt="HW Barber">
+    </div>
+    <ul class="navHeader">
+      <div class="user-actions">
+        <img class="perfil" src="/imagens/perfil.svg" alt="Pefil">
+      </div>
+    </ul>
+
+  </header>
+
+
+  <div class="tela-de-login">
+    <img class="plano-fundo-icon" alt="Fundo da Tela de Login" src="/imagens/FundoLogin.png">
+
+
+    <div class="container">
+
+      <div class="textos">
+        <div class="IconTroca">
+          <img class="trocarprabarbeiro-icon" alt="Trocar para barbeiro" src="/imagens/trocarprabarbeiro.png" id="trocarTelaLoginBarbeiro1" onclick="trocaTela1()">
+        </div>
+
+        <!-- depois fazer essa parte de deixar um no lado do outro -->
+        <div class="deixarNoLado">
+          <h2>Barbeiro</h2>
+          <div class="iconPerfil">
+            <img class="usuario-login-icon" alt="Ícone de Usuário" src="/imagens/perfil.svg">
+          </div>
+        </div>
+
+
+        <div class="campo">
+          <div class="digite-seus-dados">Login</div>
+          <!-- <label for="email" class="emailusurio">Email/Usuário</label> -->
+          <input type="number" id="email" name="email" required aria-label="Email ou Usuário" placeholder=" CPF" class="input-centro">
+          <!-- <label for="senha" class="senha">Senha</label> -->
+          <input type="password" id="senha" name="senha" required aria-label="Senha" placeholder=" Senha" class="input-centro">
+        </div>
+
+        <!-- <div class="semConta">
+          <h6 class="no-tem-uma" id="noTemUma">Não tem uma conta? <a href="#">Cadastre-se!</a></h6>
+          <h6 class="esqueceu-sua-senha" id="esqueceuSuaSenha"><a href="#">Esqueceu sua senha?</a></h6>
+        </div> -->
+
+
+
+        <div class="confirmar" id="confirmarContainer">
+          <button class="boto-finalizar" aria-label="Próximo" onclick="proximoBarbeiro()">Próximo</button>
+        </div>
+
+      </div>
+
+    </div><!-- .container -->
+
+  </div>
+  <script src="../../script.js"></script>
+
+</body>
+
+</html>
